@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" class="h-screen">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,700;1,400&family=EB+Garamond&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/shopping-list_825585.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/25c1b88d85.js" crossorigin="anonymous"></script>
+    <title>To Do list</title>
+</head>
+<body class="bg-purple-200 ">
+    <video muted loop autoplay plays-inline class="-z-10 fixed object-cover top-0 left-0 w-full h-full">
+        <source src="images/Trianglify.webm">
+    </video>
+    <section class=" w-full">
+        <div class=" flex flex-col mx-auto p-5 w-full max-w-[500px] bg-purple-20 backdrop-blur-md shadow-purple-800  mb-5 mt-12 rounded-xl shadow-xl">
+            <div class="flex flex-row justify-evenly items-center">
+                <h1 class=" font-almendra text-5xl text-purple-700 text-left md:text-6xl">My To Do List</h1>
+                <span><img src="images/shopping-list_825585.png" alt="" class="w-10 h-10 md:w-12 md:h-12"></span>
+            </div>
+            <div class="flex flex-row justify-evenly mt-5 mb-6">
+            <div class="flex flex-row justify-between  rounded-full  bg-slate-50 md:w-[280px] relative" >
+                <input id="input-box" type="text" name="" id="" placeholder="Add Tasks" class="outline-none  bg-transparent flex-1 p-2 pl-5 font-semibold ">
+                <button id="add" class="border-none outline-none px-6  bg-purple-700 absolute right-0 rounded-full p-2 text-white font-semibold hover:opacity-80">Add</button>
+            </div>
+            <div class="flex flex-row relative arrow">
+                <select name="sorting" id="filter-todo" class=" rounded-full outline-none pl-2 cursor-pointer appearance-none md:w-[150px] w-[130px] flex">
+                    <option value="all" class="appearance-none border-none outline-none bg-purple-200 text-pink-600 font-semibold px-2 py-2">All</option>
+                    <option value="complete" class="appearance-none border-none outline-none bg-purple-200 text-pink-600 font-semibold px-2 py-2">Complete</option>
+                    <option value="incomplete" class="appearance-none border-none outline-none bg-purple-200 text-pink-600 font-semibold px-2 py-2">Incomplete</option>
+                </select>
+            </div>
+            </div>
+            
+            <ul id="list-container">
+            </ul>
+        </div>
+        
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
