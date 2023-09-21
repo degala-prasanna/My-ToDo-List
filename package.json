@@ -1,0 +1,16 @@
+{
+  "name": "my_to_do_list",
+  "version": "1.0.0",
+  "main": "main.js",
+  "description": "",
+  "scripts": {
+    "bulid": "tailwindcss -i ./input.css -o ./src/main.css",
+    "watch": "tailwindcss -i ./input.css -o ./src/main.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
