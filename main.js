@@ -64,7 +64,7 @@ function filterTodo(e) {
             case "all": 
                 todo.style.display = "flex";
                 break;
-            case "completed": 
+            case "complete": 
                 if(todo.classList.contains("checked")) {
                     todo.style.display = "flex";
                 } else {
