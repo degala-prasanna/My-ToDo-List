@@ -69,6 +69,11 @@ ul li span:hover{
     transform: scale(1.5);
     transition: all 0.3s ease-in;
 }
+select {
+    position: relative; /* Set position to relative to allow absolute positioning of the arrow */
+    appearance: none; /* Remove the default dropdown arrow on some browsers */
+  }
+  
   /* Style the select element */
   select {
     color: #7E22CE;
@@ -100,3 +105,4 @@ ul li span:hover{
   .arrow:hover::after {
     color: #fff; /* Change the arrow color on hover */
   }
+  
