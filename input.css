@@ -69,3 +69,34 @@ ul li span:hover{
     transform: scale(1.5);
     transition: all 0.3s ease-in;
 }
+  /* Style the select element */
+  select {
+    color: #7E22CE;
+    font-weight: 600;
+  }
+  
+  /* Style the pseudo-element for the arrow */
+  .arrow::after {
+    content: "\25BC";
+    position: absolute;
+    color: #f55ea7;
+    z-index: 99;
+    top: 0;
+    right: 0;
+    width: 40px;
+    padding: 2px 8px;
+    font-size:x-large;
+    background-color: #7E22CE;
+    height: 100%;
+    cursor: pointer;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+   
+  }
+  
+  /* Hover effect for the arrow */
+  .arrow:hover::after {
+    color: #fff; /* Change the arrow color on hover */
+  }
